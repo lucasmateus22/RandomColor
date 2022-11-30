@@ -1,0 +1,52 @@
+:root{
+    --pink:rgb(237, 128, 153);
+    --violet2:rgb(222, 124, 212);
+    --violet:rgb(173, 128, 237);
+    --violetBorder:rgb(147, 89, 230);
+    --green:rgb(128, 237, 215);
+    --blue:rgb(130, 128, 237);
+    --green2:rgb(144, 237, 128);
+}
+.input-header{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 78vw;
+    height: 7%;
+    background-color:var(--blue);
+    border-radius:0 0 0 30px;
+}
+.input-box{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    width: 90%;
+}
+.input-box img{
+    width: 20px;
+    position: absolute;
+    margin-left: 420px;
+    margin-top: 5px;
+}
+input{
+    overflow: hidden;
+    width: 35%;
+    height: 26px;
+    border-radius: 15px;
+    border: 2px solid grey;
+    box-shadow: 0 0 20px var(--violetBorder);
+    font-size: 1em;
+    font-weight: bold;
+}
+.sair{
+    font-weight: bold;
+    text-align: right;
+    width: 100px;
+    color: white;
+    cursor: pointer;
+}
+.sair:hover{
+    text-shadow: 0 0 10px var(--violet2);
+}

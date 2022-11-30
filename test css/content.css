@@ -1,0 +1,46 @@
+:root{
+    --pink:rgb(237, 128, 153);
+    --violet2:rgb(222, 124, 212);
+    --violet:rgb(173, 128, 237);
+    --violetBorder:rgb(147, 89, 230);
+    --green:rgb(128, 237, 215);
+    --blue:rgb(130, 128, 237);
+    --green2:rgb(144, 237, 128);
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 85vw;
+    height: 100%;
+}
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 76vw;
+    height: 750px;
+    background-color: rgb(226, 226, 226);
+    border: 1px solid rgb(190, 190, 190);
+    box-shadow: 0 0 15px rgb(180, 180, 180);
+}
+.block{
+    margin:50px 80px 0 80px ;
+    width: 20%;
+    height: 300px;
+    border-radius: 90%;
+    transition: .8s;
+    background: rgb(147,89,230);
+    background: linear-gradient(45deg, rgba(147,89,230,1) 0%, rgba(173,128,237,1) 12%, rgba(222,124,212,1) 24%, rgba(237,128,153,1) 36%, rgba(255,255,255,1) 76%);
+}
+.block:hover{
+    transition: .8s;
+    transform: scale(1.1);
+    box-shadow: 0 10px 10px rgb(182, 182, 182);
+}
+.block::after{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: aqua;
+}

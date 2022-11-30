@@ -1,0 +1,82 @@
+:root{
+    --pink:rgb(237, 128, 153);
+    --violet2:rgb(222, 124, 212);
+    --violet:rgb(173, 128, 237);
+    --violetBorder:rgb(147, 89, 230);
+    --green:rgb(128, 237, 215);
+    --blue:rgb(130, 128, 237);
+    --green2:rgb(144, 237, 128);
+}
+header{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    padding: 3%;
+    background-color: var(--blue);
+    opacity: 0.8;
+    border-right: 1px solid var(--violetBorder);
+    box-shadow: 0px 0px 25px var(--violetBorder);
+}
+.header-top{
+    height: 30%;
+}
+.title{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 10px;
+    margin-bottom: 50%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px white,
+    0 0 20px white,
+    0 0 40px white,
+    0 0 80px white,
+    0 0 120px white;
+    background-color: white;
+    transition: 1s;
+}
+.title:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.title:hover h2{
+    margin-top: 13%;
+    transition: 1s;
+}
+h1{
+    font-size: 3em;
+}
+h2{
+    margin-top: 40%;
+    font-size: 2.3em;
+    margin-left: 10px;
+    transition: 1s;
+}
+h2::first-letter{
+    color: var(--violet2)
+}
+header ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 2.5em;
+    border-bottom: 1px solid white;
+}
+header ul li img{
+    display: none;
+    width: 40px;
+    transition: 0.8s;
+}
+header li:hover{
+    cursor: pointer;
+    text-shadow: 0px 0px 10px var(--violet2);
+}
+#joan img{
+    width: 30px;
+}
+header ul li:hover img{
+    display: flex;
+    transition: 0.8s;
+}
